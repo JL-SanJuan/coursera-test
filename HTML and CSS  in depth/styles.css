@@ -1,0 +1,186 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+	color:white;
+}
+body{
+	height:100vh;
+	width:100%;
+	font-family: sans-serif;
+	font-size:20px;
+	background-image: url('Lucky-Shrub-logos/background.jpg');
+} 	
+header{
+	display:flex;
+	justify-content:center;
+	align-items:end;
+}
+/*-----HEADER-----*/
+header img{
+	margin: 20px 40px;
+	width:8%;
+	height:8%;
+}
+header span{
+	display:inline-block;
+	border-top:2px solid white;
+	width:30%;
+	height:100px;
+}
+
+/*-----NAV SECTION-----*/
+nav{
+	margin-bottom:10px;
+}
+nav ul{
+	display:flex;
+	margin:auto;
+	width:80%;
+	height:10%;
+	border:1px solid white; 
+}
+nav li{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	list-style:none;
+	width:100%;
+	font-size:1.2em;
+	transition: 0.3s ease-in-out;
+}
+nav li a{
+	display:inline-block;
+	text-decoration:none;
+	width:100%;
+	height:100%;
+	padding: 10px 40px;
+	font-weight:700;
+	transition: 0.3s ease-in-out;
+}
+nav li:hover a{
+	background-color:#2db300;
+	color:white;
+}
+nav .active a{
+	background-color:#2db300;
+	color:white;
+}
+
+/*-----MAIN SECTION-----*/
+main{
+	display:flex;
+	flex-direction:column;
+	padding:40px;
+}
+.main-promotion{
+	width:100%;
+	margin:40px 0 80px;
+	background-image:url('Lucky-Shrub-logos/1.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.main-promotion img{
+	width:500px;
+}
+.main-promotion div{
+	position:relative;
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	height:200px;
+	border: 1px solid white;
+	border-radius:10px;
+}
+.main-promotion div div p{
+	color:black;
+	text-align:center;
+	font-size:2rem;
+	font-weight:bold;
+	font-style:italic;
+}
+.main-promotion div div{
+	position:absolute;
+	top:5%;
+	left:65%;
+	height:100px;
+	width:100px;
+	background-color:white;
+	border-radius:50%;
+	border:1px solid #ffe599;
+}
+.sub-promotion{
+	width:100%;
+	display:flex;
+	margin-bottom:20px;
+	justify-content:center;
+	align-items:center;
+}
+.sub-promotion .tile{
+	display:flex;
+	flex:1;
+	flex-direction:column;
+	height:400px;
+	border: 1px solid white;
+	border-radius:10px;
+	overflow:ellipsis;
+	background-color: rgba(0,0,0,0.2);
+
+}
+.sub-promotion img{
+	align-self:center;
+	height:70%;
+	margin:10px;
+	width:95%;
+}
+
+.sub-promotion .description h2{
+	margin-bottom:15px;
+	text-align:center;
+}
+
+.sub-promotion .description p a{
+	margin:10px;
+	font-size:1.3rem;
+}
+.sub-promotion .tile:hover{
+	transform: scale(1.02);
+	transition:0.2s ease-in-out;
+}
+
+.sub-promotion .tile:nth-child(2){
+	margin:0 10px;
+}
+
+/*-----FOOTER-----*/
+
+footer{
+	width:98%;
+	height:10%;
+	padding: 10px;
+	border:1px solid white;
+	display:flex;
+	align-items:center;
+	margin:10px auto 10px;
+	background-color:rgba(0,0,0,0.5);
+}
+.logo-footer{
+	width:40%;
+	height:100%;
+	margin-right:10px;
+	padding-left:20px;
+}
+.copyright{
+	width:60%;
+	height:100%;
+}
+
+footer img{
+	height:60px;
+	width:50px;
+}
+footer p{
+	margin:15px;
+	font-style:italic;
+	color:white;
+}
